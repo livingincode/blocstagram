@@ -7,9 +7,13 @@
 //
 
 #import "ImagesTableViewController.h"
+#import "User.h"
+#import "Media.h"
+#import "Comment.h"
+#import "DataSource.h"
+
 
 @interface ImagesTableViewController ()
-@property (nonatomic, strong) NSMutableArray *images;
 
 @end
 
