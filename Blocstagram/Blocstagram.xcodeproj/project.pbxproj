@@ -10,7 +10,6 @@
 		3CD739D51B2FC687002B3473 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD739D41B2FC687002B3473 /* main.m */; };
 		3CD739D81B2FC687002B3473 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD739D71B2FC687002B3473 /* AppDelegate.m */; };
 		3CD739DB1B2FC687002B3473 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD739DA1B2FC687002B3473 /* ViewController.m */; };
-		3CD739DE1B2FC687002B3473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD739DC1B2FC687002B3473 /* Main.storyboard */; };
 		3CD739E01B2FC687002B3473 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD739DF1B2FC687002B3473 /* Images.xcassets */; };
 		3CD739E31B2FC687002B3473 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD739E11B2FC687002B3473 /* LaunchScreen.xib */; };
 		3CD739EF1B2FC687002B3473 /* BlocstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD739EE1B2FC687002B3473 /* BlocstagramTests.m */; };
@@ -34,7 +33,6 @@
 		3CD739D71B2FC687002B3473 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3CD739D91B2FC687002B3473 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3CD739DA1B2FC687002B3473 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3CD739DD1B2FC687002B3473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CD739DF1B2FC687002B3473 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3CD739E21B2FC687002B3473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3CD739E81B2FC687002B3473 /* BlocstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +83,6 @@
 				3CD739D71B2FC687002B3473 /* AppDelegate.m */,
 				3CD739D91B2FC687002B3473 /* ViewController.h */,
 				3CD739DA1B2FC687002B3473 /* ViewController.m */,
-				3CD739DC1B2FC687002B3473 /* Main.storyboard */,
 				3CD739DF1B2FC687002B3473 /* Images.xcassets */,
 				3CD739E11B2FC687002B3473 /* LaunchScreen.xib */,
 				3CD739D21B2FC687002B3473 /* Supporting Files */,
@@ -199,7 +196,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD739DE1B2FC687002B3473 /* Main.storyboard in Resources */,
 				3CD739E31B2FC687002B3473 /* LaunchScreen.xib in Resources */,
 				3CD739E01B2FC687002B3473 /* Images.xcassets in Resources */,
 			);
@@ -244,14 +240,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3CD739DC1B2FC687002B3473 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3CD739DD1B2FC687002B3473 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3CD739E11B2FC687002B3473 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
