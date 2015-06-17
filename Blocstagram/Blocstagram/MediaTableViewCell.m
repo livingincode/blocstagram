@@ -28,7 +28,15 @@ static NSParagraphStyle *paragraphStyle;
 
 @implementation MediaTableViewCell
 
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+    
+    // Configure the view for the selected state
+}
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]; //Forgot this line of code, hence the error stating that it wasn't initialized. 
+    
     if (self) {
         self.mediaImageView = [[UIImageView alloc] init];
         self.usernameAndCaptionLabel = [[UILabel alloc] init];
@@ -153,10 +161,5 @@ static NSParagraphStyle *paragraphStyle;
     return CGRectGetMaxY(layoutCell.commentLabel.frame);
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
 
 @end
