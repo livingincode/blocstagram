@@ -90,6 +90,8 @@ static NSParagraphStyle *paragraphStyle;
     [mutableUsernameAndCaptionString addAttribute:NSForegroundColorAttributeName value:linkColor range:usernameRange];
     
     return mutableUsernameAndCaptionString;
+    
+    
 }
 
 - (NSAttributedString *) commentString {
