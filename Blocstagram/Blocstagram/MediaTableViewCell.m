@@ -89,6 +89,10 @@ static NSParagraphStyle *paragraphStyle;
     [mutableUsernameAndCaptionString addAttribute:NSFontAttributeName value:[boldFont fontWithSize:usernameFontSize] range:usernameRange];
     [mutableUsernameAndCaptionString addAttribute:NSForegroundColorAttributeName value:linkColor range:usernameRange];
     
+    //Increases kerning or character spacing
+    NSRange captionRange = [baseString rangeOfString:self.mediaItem.caption];
+    [mutableUsernameAndCaptionString addAttribute:NSKernAttributeName value:@5 range:captionRange];
+    
     return mutableUsernameAndCaptionString;
     
     
@@ -96,6 +100,8 @@ static NSParagraphStyle *paragraphStyle;
 
 - (NSAttributedString *) commentString {
     NSMutableAttributedString *commentString = [[NSMutableAttributedString alloc] init];
+    
+    int commentCount = 0;
     
     for (Comment *comment in self.mediaItem.comments) {
         // Make a string that says "username comment" followed by a line break
@@ -105,6 +111,11 @@ static NSParagraphStyle *paragraphStyle;
         
         NSMutableAttributedString *oneCommentString = [[NSMutableAttributedString alloc] initWithString:baseString attributes:@{NSFontAttributeName : lightFont, NSParagraphStyleAttributeName : paragraphStyle}];
         
+        if (++commentCount == 1) {
+                        NSRange commentRange = [baseString rangeOfString:comment.text];
+                        [oneCommentString addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:commentRange];
+        }
+      
         NSRange usernameRange = [baseString rangeOfString:comment.from.userName];
         [oneCommentString addAttribute:NSFontAttributeName value:boldFont range:usernameRange];
         [oneCommentString addAttribute:NSForegroundColorAttributeName value:linkColor range:usernameRange];
