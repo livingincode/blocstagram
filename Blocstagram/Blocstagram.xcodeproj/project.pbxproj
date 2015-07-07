@@ -24,6 +24,7 @@
 		3CD73A0B1B2FE959002B3473 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CD73A011B2FE959002B3473 /* 9.jpg */; };
 		3CD73A0C1B2FE959002B3473 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CD73A021B2FE959002B3473 /* 10.jpg */; };
 		3CD73A0F1B2FE9B4002B3473 /* ImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD73A0E1B2FE9B4002B3473 /* ImagesTableViewController.m */; };
+		3CF0BD741B4B9166000E4A54 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF0BD731B4B9166000E4A54 /* LoginViewController.m */; };
 		3CFB5D4E1B30B5D3003E6BB4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB5D4D1B30B5D3003E6BB4 /* User.m */; };
 		3CFB5D511B30B7BE003E6BB4 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB5D501B30B7BE003E6BB4 /* Media.m */; };
 		3CFB5D541B30B928003E6BB4 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB5D531B30B928003E6BB4 /* Comment.m */; };
@@ -65,6 +66,8 @@
 		3CD73A021B2FE959002B3473 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		3CD73A0D1B2FE9B4002B3473 /* ImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesTableViewController.h; sourceTree = "<group>"; };
 		3CD73A0E1B2FE9B4002B3473 /* ImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesTableViewController.m; sourceTree = "<group>"; };
+		3CF0BD721B4B9166000E4A54 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3CF0BD731B4B9166000E4A54 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3CFB5D4C1B30B5D3003E6BB4 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		3CFB5D4D1B30B5D3003E6BB4 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		3CFB5D4F1B30B7BE003E6BB4 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				3CFB5D531B30B928003E6BB4 /* Comment.m */,
 				3CFB5D551B30C5EA003E6BB4 /* DataSource.h */,
 				3CFB5D561B30C5EA003E6BB4 /* DataSource.m */,
+				3CF0BD721B4B9166000E4A54 /* LoginViewController.h */,
+				3CF0BD731B4B9166000E4A54 /* LoginViewController.m */,
 				3CD739DF1B2FC687002B3473 /* Images.xcassets */,
 				3CD739E11B2FC687002B3473 /* LaunchScreen.xib */,
 				3CD739D21B2FC687002B3473 /* Supporting Files */,
@@ -293,6 +298,7 @@
 				3C3D073D1B313C5700457F00 /* MediaTableViewCell.m in Sources */,
 				3CFB5D511B30B7BE003E6BB4 /* Media.m in Sources */,
 				3CD739D81B2FC687002B3473 /* AppDelegate.m in Sources */,
+				3CF0BD741B4B9166000E4A54 /* LoginViewController.m in Sources */,
 				3CFB5D571B30C5EA003E6BB4 /* DataSource.m in Sources */,
 				3CD739D51B2FC687002B3473 /* main.m in Sources */,
 				3CD73A0F1B2FE9B4002B3473 /* ImagesTableViewController.m in Sources */,
