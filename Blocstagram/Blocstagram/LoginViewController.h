@@ -12,4 +12,6 @@
 
 extern NSString *const LoginViewControllerDidGetAccessTokenNotification;
 
+- (void) goBack:(UIBarButtonItem *) sender;
+
 @end

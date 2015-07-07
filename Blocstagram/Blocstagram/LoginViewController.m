@@ -35,6 +35,13 @@ NSString *const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewCo
     self.webView = webView;
     
     self.title = NSLocalizedString(@"Login", @"Login");
+
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(goBack:)];
+    self.navigationItem.leftBarButtonItem = backButton;
+    [self goBack:nil];
+  
+}
+- (void) goBack:(UIBarButtonItem *) sender {
     
     NSString *urlString = [NSString stringWithFormat:@"https://instagram.com/oauth/authorize/?client_id=%@&redirect_uri=%@&response_type=token", [DataSource instagramClientID], [self redirectURI]];
     NSURL *url = [NSURL URLWithString:urlString];
@@ -42,9 +49,11 @@ NSString *const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewCo
     if (url) {
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         [self.webView loadRequest:request];
-    }
     
+    }
+
 }
+
 
 - (void) dealloc {
     // Removing this line can cause a flickering effect when you relaunch the app after logging in, as the web view is briefly displayed, automatically authenticates with cookies, returns the access token, and dismisses the login view, sometimes in less than a second.
