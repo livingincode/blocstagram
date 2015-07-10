@@ -159,6 +159,16 @@
     [self infiniteScrollIfNecessary];
 }
 
+- (CGFloat) tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    Media *item = [DataSource sharedInstance].mediaItems[indexPath.row];
+    if (item.image) {
+        return 350;
+    } else {
+        return 150;
+    }
+}
+
+
 
 /*
 // Override to support conditional editing of the table view.

@@ -9,7 +9,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface User : NSObject
 
 @property (nonatomic, strong) NSString *idNumber;
@@ -17,5 +16,8 @@
 @property (nonatomic, strong) NSString *fullName;
 @property (nonatomic, strong) NSURL *profilePictureURL;
 @property (nonatomic, strong) UIImage *profilePicture;
+
+- (instancetype) initWithDictionary:(NSDictionary *)userDictionary;
+
 
 @end
