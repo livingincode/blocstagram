@@ -11,6 +11,7 @@
 #import "Media.h"
 #import "Comment.h"
 #import "LoginViewController.h"
+#import <UICKeyChainStore.h>
 
 @interface DataSource () { //Deleting images checkpoint - property change
     NSMutableArray *_mediaItems;
